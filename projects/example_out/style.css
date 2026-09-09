@@ -1,0 +1,746 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body {
+  background-color: rgb(78, 24, 105);
+}
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 90px;
+}
+.nav__ul {
+  display: flex;
+  gap: 40px;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+ color: rgb(23, 23, 23);
+}
+.hero {
+  background-image: url(Artboard\ 1\ 1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 90px;
+  background-color: rgb(66, 8, 95);
+}
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.exp {
+  color: rgb(157, 65, 168);
+}
+.hero__text {
+  color: white;
+  font-size: 9000;
+}
+.playing {
+  padding-top: 32px;
+  color: white;
+}
+.hero__btn {
+  padding-top: 32px;
+}
+.buy {
+  color: white;
+  padding: 15px 30px;
+  background-color: rgb(168, 49, 211);
+  border: none;
+}
+.play {
+  color: white;
+  padding: 15px 30px;
+  background-color: transparent;
+  border-color: rgb(138, 23, 180);
+}
+.frame {
+  padding-top: 32px;
+}
+.group {
+  padding-left: 70px;
+}
+.choose {
+  text-align: center;
+}
+.rec {
+  padding-top: 20px;
+  display: flex;
+  gap: 40px;
+}
+.view {
+  text-align: center;
+  padding-top: 71px;
+}
+.gaming {
+  background-image: url(./Rectangle\ 5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 80px;
+  border-radius: 12px;
+  border: 1px solid white;
+}
+.gaming__wrapper {
+  display: flex;
+}
+.trans {
+  width: 700px;
+  height: 600px;
+}
+.gaming__text {
+  padding-top: 100px;
+}
+.gaming__btn {
+  padding-top: 30px;
+}
+.top__wrapper {
+  padding-top: 100px;
+  text-align: center;
+}
+.top__btn {
+  padding-top: 32px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.demo {
+  width: 390px;
+  height: 470px;
+  border: white;
+  background-image: url(./Rectangle\ 6.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 15px;
+}
+.ell {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.core {
+  padding-top: 20px;
+  display: flex;
+  text-align: center;
+  color: white;
+}
+.came {
+  padding-top: 10px;
+  display: flex;
+}
+.gil {
+  color: white;
+}
+.btn{
+  padding-top: 15px;
+}
+.live {
+  color: white;
+  padding: 15px 145px;
+  background-color: rgb(168, 49, 211);
+}
+.work{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 100px;
+  margin-top: 50px;
+}
+.action{
+  padding-top: 100px;
+}
+.score__text{
+   background-image: url(./Rectangle\ 20.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+}
+.group{
+  padding-top: 50px;
+}
+.one{
+  padding-top: 10px;
+  padding-left: 70px;
+}
+.mc{
+  display: flex;
+  align-items: center;
+}
+.elll{
+  padding-top: 20px;
+  padding-left: 70px;
+}
+.mccoy{
+  padding-left: 10px;
+}
+.verity{
+  padding-left: 150px;
+}
+.score__wrapper{
+  display: flex;
+  gap: 20px;
+  padding-left: 110px;
+  padding-top: 100px;
+}
+.next{
+ padding-top: 100px;
+ text-align: center;
+}
+.packed{
+  padding-top: 100px ;
+  padding-left: 50px;
+}
+.foot{
+  background-image: url(./image\ 24\ \(1\)\ 1.svg);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1520px;
+  height: 400px;
+}
+.foot__text{
+  display: flex;
+  padding-top: 100px;
+  gap: 100px;
+}
+.twich{
+  display: flex;
+  gap: 48px;
+  padding-top: 20px;
+}
+.social{
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  gap: 50px;
+}
+.all{
+  color: white;
+}
+h3{
+  color: white;
+}
+p{
+  color: white;
+}
+
+/* --- Final polish: even layout, responsive sizing, and lighter motion --- */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  min-width: 0;
+}
+
+.container {
+  width: min(100% - 40px, 1440px);
+}
+
+.nav__wrapper {
+  padding: 28px 40px;
+}
+
+.nav__ul {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 80px 40px;
+}
+
+.hero__wrappert {
+  width: 100%;
+}
+
+.hero__text {
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.hero__description {
+  max-width: 720px;
+  line-height: 1.7;
+  margin-top: 0;
+}
+
+.hero__btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.buy,
+.play,
+.live {
+  border: 1px solid rgb(138, 23, 180);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.buy:hover,
+.play:hover,
+.live:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.frame {
+  max-width: 100%;
+  height: auto;
+}
+
+.group,
+.packed {
+  max-width: 100%;
+}
+
+.rec {
+  max-width: 100%;
+  height: auto;
+}
+
+.gaming {
+  margin: 70px auto;
+  width: min(100% - 80px, 1440px);
+  overflow: hidden;
+}
+
+.gaming__wrapper {
+  align-items: center;
+}
+
+.trans {
+  width: min(700px, 100%);
+  height: auto;
+}
+
+.gaming__text {
+  padding: 70px 40px;
+}
+
+.work {
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+}
+
+.demo {
+  max-width: 390px;
+}
+
+.score__wrapper {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 80px 20px 0;
+}
+
+.score__text {
+  max-width: 600px;
+  width: 100%;
+}
+
+.foot {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 400px;
+  padding-bottom: 40px;
+}
+
+.foot__text {
+  flex-wrap: wrap;
+  padding: 80px 40px 0;
+  justify-content: space-between;
+}
+
+.social {
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+/* Keep the page animation subtle and consistent. */
+[data-aos] {
+  will-change: opacity, transform;
+}
+
+@media (max-width: 900px) {
+  .nav__wrapper {
+    padding: 22px 20px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .gaming {
+    width: calc(100% - 40px);
+    margin: 50px auto;
+  }
+
+  .gaming__wrapper {
+    flex-direction: column;
+  }
+
+  .gaming__text {
+    padding: 40px 25px 50px;
+  }
+
+  .top__btn {
+    flex-wrap: wrap;
+  }
+
+  .work {
+    gap: 20px;
+  }
+
+  .score__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 24px, 1440px);
+  }
+
+  .nav__wrapper {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav__ul {
+    gap: 14px;
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 55px 12px 70px;
+  }
+
+  .hero__text {
+    font-size: clamp(36px, 11vw, 54px);
+  }
+
+  .hero__description {
+    font-size: 15px;
+  }
+
+  .hero__btn {
+    flex-wrap: wrap;
+  }
+
+  .gaming {
+    width: calc(100% - 24px);
+    margin: 35px auto;
+  }
+
+  .trans {
+    width: 100%;
+  }
+
+  .demo {
+    width: 100%;
+    height: auto;
+    min-height: 430px;
+  }
+
+  .live {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .score__text {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .one {
+    padding-left: 30px;
+    padding-right: 20px;
+    line-height: 1.5;
+  }
+
+  .elll {
+    padding-left: 30px;
+  }
+
+  .verity {
+    padding-left: 20px;
+  }
+
+  .foot__text {
+    padding: 55px 20px 0;
+    gap: 35px;
+  }
+
+  .social {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+}
+
+
+/* --- Global alignment: header, sections and footer share one content line --- */
+:root {
+  --content-width: 1440px;
+  --content-pad: 40px;
+}
+
+.nav__wrapper,
+.hero__wrappert,
+.gaming,
+.top,
+.score__wrapper,
+.foot__text,
+.social {
+  width: min(100% - calc(var(--content-pad) * 2), var(--content-width));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero__wrappert {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gaming {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.score__wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.foot__text,
+.social {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --content-pad: 20px;
+  }
+
+  .nav__wrapper,
+  .hero__wrappert,
+  .gaming,
+  .top,
+  .score__wrapper,
+  .foot__text,
+  .social {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --content-pad: 12px;
+  }
+
+  .nav__wrapper,
+  .hero__wrappert,
+  .gaming,
+  .top,
+  .score__wrapper,
+  .foot__text,
+  .social {
+    width: calc(100% - 24px);
+  }
+}
+
+
+/* Final fixes for example_out */
+html, body {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+.hero__wrapper {
+  width: 100%;
+}
+
+.favorite {
+  padding: 90px 0;
+}
+
+.favorite .rec {
+  width: min(100% - 80px, 1250px);
+  margin: 25px auto 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.favorite .rec img {
+  flex: 1 1 0;
+  width: 0;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.view {
+  padding-top: 45px;
+}
+
+.top {
+  padding-top: 20px;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 390px));
+  justify-content: center;
+  gap: 30px;
+  padding-left: 0;
+  margin-top: 50px;
+}
+
+.demo {
+  width: 100%;
+  max-width: 390px;
+}
+
+.score {
+  padding-bottom: 20px;
+}
+
+.score__wrapper {
+  align-items: stretch;
+}
+
+.foot__wrapper {
+  width: 100%;
+}
+
+.foot__text > div {
+  min-width: 140px;
+}
+
+@media (max-width: 1200px) {
+  .work {
+    grid-template-columns: repeat(2, minmax(0, 390px));
+  }
+}
+
+@media (max-width: 900px) {
+  .favorite .rec {
+    width: calc(100% - 40px);
+    flex-wrap: wrap;
+  }
+
+  .favorite .rec img {
+    width: calc(50% - 12px);
+    flex: 0 1 calc(50% - 12px);
+  }
+
+  .work {
+    grid-template-columns: minmax(0, 390px);
+  }
+
+  .nav__wrapper {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .favorite {
+    padding: 60px 0;
+  }
+
+  .favorite .rec {
+    width: calc(100% - 24px);
+  }
+
+  .favorite .rec img {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .hero .playing br,
+  .gaming .playing br,
+  .score .one br {
+    display: none;
+  }
+
+  .hero__btn {
+    gap: 10px;
+  }
+
+  .hero__btn button,
+  .gaming__btn button,
+  .view button {
+    min-width: 130px;
+  }
+}
+.next{
+  display: flex;
+  justify-content: center;
+}

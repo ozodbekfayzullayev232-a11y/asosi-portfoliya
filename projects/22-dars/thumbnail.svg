@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+      <defs>
+        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#101522"/><stop offset="1" stop-color="#080b14"/></linearGradient>
+        <filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".35"/></filter>
+      </defs>
+      <rect width="1200" height="700" rx="28" fill="url(#g)"/>
+      <rect x="55" y="55" width="1090" height="590" rx="24" fill="#0d1220" stroke="#6c63ff" stroke-opacity=".45" filter="url(#s)"/>
+      <circle cx="105" cy="105" r="10" fill="#6c63ff"/>
+      <text x="135" y="117" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#e8edf7">22-DARS</text>
+      <rect x="95" y="180" width="1010" height="2" fill="#6c63ff" opacity=".45"/>
+      <text x="95" y="315" font-family="Arial, sans-serif" font-size="68" font-weight="800" fill="#ffffff">MENI BOS</text>
+      <text x="95" y="375" font-family="Arial, sans-serif" font-size="28" font-weight="600" fill="#aab3c5">HOVER • TRANSFORM • CSS</text>
+      <rect x="95" y="465" width="250" height="64" rx="16" fill="#6c63ff" opacity=".95"/>
+      <text x="220" y="507" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#07110d">LOYIHANI OCHISH →</text>
+    </svg>
